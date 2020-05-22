@@ -315,3 +315,8 @@ variable "max_instance_lifetime" {
   default     = 0
 }
 
+variable "autoscaling_depends_on" {
+  description = "This variable is being used only to add dependencies between module."
+  type    = any
+  default = null
+}

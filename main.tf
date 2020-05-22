@@ -61,6 +61,8 @@ resource "aws_launch_configuration" "this" {
 resource "aws_autoscaling_group" "this" {
   count = var.create_asg && false == var.create_asg_with_initial_lifecycle_hook ? 1 : 0
 
+  depends_on = [var.autoscaling_depends_on]
+
   name_prefix = "${join(
     "-",
     compact(

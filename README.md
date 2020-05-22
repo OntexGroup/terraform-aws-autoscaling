@@ -126,6 +126,8 @@ There are two ways to specify tags for auto-scaling group in this module - `tags
 | Name | Version |
 |------|---------|
 | aws | ~> 2.41 |
+| null | n/a |
+| random | n/a |
 
 ## Inputs
 
